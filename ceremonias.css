@@ -1,0 +1,46 @@
+h1{
+    font-weight: bold;
+    color: #1DABE5;
+}
+
+.strongNavBar{
+    font-weight: bold;
+}
+
+.subtitle-format{
+    font-size: 3em;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    left: 800px;
+}
+
+
+.mainP1{
+    font-style: italic;
+    font-size: 2em;
+    font-family: 'Righteous', cursive;
+    padding: 50px;
+    color: #C94253;
+}
+
+.audioMain{
+    position: relative;
+    left: 750px;
+}
+
+.mainP2{
+    font-style: italic;
+    font-size: 2em;
+    font-family: 'Patua One', cursive;
+    padding: 50px;
+    color: #9710DB;
+}
+
+.footer-center{
+    position: absolute;
+    left: 800px;
+    color: black;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}

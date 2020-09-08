@@ -1,0 +1,43 @@
+.format-h1{
+    font-weight: bold;
+    color: teal;
+}
+
+.strongNavBar{
+    font-weight: bold;
+}
+
+h2{
+    font-weight: bold;
+    font-family:'Gayathri', sans-serif;
+    color: red;
+    position: relative;
+    left: 700px;   
+}
+
+.mainP{
+    font-style: italic;
+    font-size: 2em;
+    font-family:'Gayathri', sans-serif;
+    padding: 50px;
+    color: slateblue;
+}
+
+.imgMain{
+    position: relative;
+    left: 450px;
+}
+
+.videoMain{
+    position: relative;
+    left: 260px;
+}
+
+.footer-center{
+    position: absolute;
+    left: 800px;
+    color: black;
+    text-align: center;
+    font-family:'Gayathri', sans-serif; ;
+}
+

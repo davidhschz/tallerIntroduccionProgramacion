@@ -1,0 +1,35 @@
+body{
+    background-attachment: fixed;
+    background-color: cornflowerblue;
+    font-family: 'Roboto Slab', serif;
+}
+
+.strongNavBar{
+    font-weight: bold;
+}
+
+.fontsize-main{
+    font-size: 26px;
+}
+
+.enfasis{
+    font-weight: bold;
+}
+
+.image-main{
+    display: inline-block;
+}
+
+.audio-main{
+    display: inline-block;
+}
+
+.footer-center{
+    position: absolute;
+    left: 800px;
+    background-color: cornflowerblue;
+    color: white;
+    text-align: center;
+}
+
+

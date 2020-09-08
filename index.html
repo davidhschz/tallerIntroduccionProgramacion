@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+   
+<!-- El meta contiene información de la pag web que el usuario no ve pero que describe que hace, cual es la codificación, como maneja el tema de vistas. -->
+    <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juegos Olímpicos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -13,11 +17,12 @@
         <h1>Juegos Olímpicos</h1>
         <nav>
             <ul>
-                <li><a href="index.html"><strong>Página de inicio</strong></a></li>
+                <li><a href="index.html" class="strongNavBar">Página de inicio</a></li>
                 <li><a href="registro.html">Registro</a></li>
-                <li><a href="creatividad.html">¿Qué es la creatividad?</a></li>
+                <li ><a href="comiteO.html">Comité Olímpico</a></li>
+                <li ><a href="ceremonias.html">Ceremonias</a></li>
                 <li><a href="https://www.olympic.org/" target="_blank">Página Oficial</a></li>
-                <li><a href="https://es.wikipedia.org/wiki/Juegos_Ol%C3%ADmpicos" target="_blank">Documentación Wikipedia</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/Juegos_Ol%C3%ADmpicos" target="_blank">Documentación</a></li> 
             </ul>
         </nav>
     
@@ -30,38 +35,41 @@
         </div>
         <hr>
 
-        <div>
+        <div class="fontsize-main">
         
         <h2>Descripción</h2>
         
-        <p>Los Juegos Olímpicos​ (JJ. OO.)​ (Jeux Olympiques en francés, y Olympic Games en inglés),Nota ​ Olimpiadas​ u Olimpíadas6​ son el mayor evento deportivo internacional multidisciplinario en el que participan atletas de diversas partes del mundo. Los Juegos Olímpicos son considerados la principal competición del mundo deportivo, con más de doscientas naciones participantes.</p>
+        <p><span class="enfasis">Los Juegos Olímpicos</span> ​ (JJ. OO.)​ (Jeux Olympiques en francés, y Olympic Games en inglés),Nota ​ Olimpiadas​ u Olimpíadas6​ son el mayor evento deportivo internacional multidisciplinario en el que participan atletas de diversas partes del mundo. Los Juegos Olímpicos son considerados la principal competición del mundo deportivo, con más de doscientas naciones participantes.</p>
 
         ​<p>Existen dos tipos: los Juegos Olímpicos de Verano y los Juegos Olímpicos de Invierno, que se realizan con un intervalo de dos años, según la Carta Olímpica: «Los Juegos de la Olimpiada se celebran durante el primer año de una Olimpiada, y los Juegos Olímpicos de Invierno durante su tercer año»</p>
-
         </div>
         
         <div>
-        <img src="img\discobolo.jpg" alt="discobolo" width="200" height="300">
+            <div class="image-main">
+            <img src="img\discobolo.jpg" alt="discobolo" >
+            </div>
+            <div class="audio-main">
+            <audio src="img\the-olympic-hymn-vocal-version.mp3" controls></audio>
+            </div>
         </div>
-        <div>
-        <video src="img\japan2020.mp4" controls height="500" width="700"></video>
+        <div class="video-main">
+        <video src="img\japan2020.mp4" controls></video>
         </div>
-        <div>
-        <audio src="img\the-olympic-hymn-vocal-version.mp3" controls></audio>
-        </div>
+
         <hr>
     
     </main>
 
-    <footer>
+    <div class="footer-center">
+        <footer>
+            <p>&#169; David Hernández Sánchez</p>
+            <p>&#64; davidh.schz@gmail.com</p>
+            <p><a href="contacto.html" target="_blank">Contáctenos</a></p>
+            <p>Todos los derechos reservados.</p>
+            <p>2020</p> 
+        </footer>
+    </div>
 
-        <p>&#169; David Hernández Sánchez</p>
-        <p>&#64; davidh.schz@gmail.com</p>
-        <p><a href="contacto.html" target="_blank">Contáctenos</a></p>
-        <p>Todos los derechos reservados.</p>
-        <p>2020</p> 
-
-    </footer>
     
 </body>
 

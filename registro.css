@@ -1,39 +1,15 @@
-body{
-    background-color: cornflowerblue;
-}
-
-.strongNavBar{
-    font-weight: bold;
-}
-
-.strong-h1{
-    font-weight: bold;
-    color: thistle;
-}
-.form-container{
-    height: 400px;
-    width: 1000px;
-    position: relative;
-    left: 400px;
-}
-
-.form-format{
-    font-family: 'Roboto Slab', serif;
-}
-
-.fontsize-h2-main{
-    font-size: 26px;
-}
-
-.mainP-strong{
-    font-weight: bold;
-}
-
-.footer-center{
-    position: absolute;
-    left: 800px;
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
     color: white;
     text-align: center;
-    font-family:'Roboto Slab', serif;
+    }
+.body-position{
+    position: relative;
 }
-
+.margin-top{
+    margin-top: 500px;
+}

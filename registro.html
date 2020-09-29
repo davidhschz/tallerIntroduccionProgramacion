@@ -1,78 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="registro.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/icons/font-awesome-4.7.0/css/font-awesome.min.css">
     <title>Registro</title>
 </head>
 
 <body>
     
     <header>
+          
+        <nav class="navbar navbar-expand-lg   fixed-top bg-dark text-white lead ">
+            <a class="navbar-brand font-weight-bold text-white" href="index.html">Juegos Olímpicos</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
         
-        <h1><span class="strong-h1">Juegos Olímpicos</span></h1>
-        <nav>
-            <ul>
-                <li><a href="index.html" >Página de inicio</a></li>
-                <li><a href="registro.html"class="strongNavBar">Registro</a></li>
-                <li ><a href="comiteO.html">Comité Olímpico</a></li>
-                <li ><a href="ceremonias.html">Ceremonias</a></li>
-                <li><a href="https://www.olympic.org/" target="_blank">Página Oficial</a></li>
-                <li><a href="https://es.wikipedia.org/wiki/Juegos_Ol%C3%ADmpicos" target="_blank">Documentación</a></li> 
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link text-white" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-white" href="registro.html">Registro</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Información
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="ceremonias.html">Ceremonias</a>
+                    <a class="dropdown-item" href="comiteO.html">Comité Olímpico</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Página Oficial</a>
+                </div>
+                </li>
+                
             </ul>
-            <hr>
+            </div>
         </nav>
-    
-    </header>  
+        
+    </header> 
 
     <main>
-        
-        <div class="form-container">
-            <div class="form-format">
-            <h2><span class="fontsize-h2-main">Registro</span></h2>
-            <p>Por favor ingrese los datos solicitados para registrarse.</p>
-            
-            
-            <form>
-                
-                <input type="text" placeholder="Nombres y Apellidos" id="nombre_Usuario" name="nombre_Usuario">
-                <input type="password" placeholder="Contraseña">
-                <label for="cedula_Usuario">Cédula:</label>
-                <input type="number" id="cedula_Usuario" name="cedula_Usuario">
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email">
-                <input type="submit" name="enviar" id="enviar">
-                
-            </form>
+        <div class="container ">
+            <div class="row mt-5 justify-content-center h-100">
+                <div class="col-4">
+                    <h3 class="mt-5">REGISTRO</h3>
+                    
+                    <form class="mt-5">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1"><i class="far fa-user"></i></span>
+                            </div>
+                            <input type="text" placeholder="Nombre" class="form-control" id="nombre" name="nombre">
+                        </div>
 
-            <p>
-                <span class="mainP-strong">DECLARACIÓN DE PRIVACIDAD:</span> Para nosotros muy importante el respeto y la preservación de los datos de nuestros candidatos, clientes, y proveedores. Su información personal siempre será tratada de manera adecuada respetando la confidencialidad necesaria y de acuerdo con las leyes, las directivas, los reglamentos y los principios aplicables a la protección de datos personales.
-            </p>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1"><i class="far fa-envelope"></i></span>
+                            </div>
+                            <input type="email" placeholder="Correo Electrónico"class="form-control" id="correo" name="correo">
+                        </div>
 
-            <form>
-                
-                <input type="checkbox" name="privacy_Statement" id="privacy_Statement">
-                <label for="privacy_Statement">Acepto</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="password" placeholder="Contraseña" class="form-control" id="contraseña" name="contraseña">
+                        </div>
 
-            </form>
+                        <div class="text-justify mb-5">
+                            Para nosotros es muy importante el respeto y la preservación de los datos de nuestros candidatos, clientes, y proveedores. Su información personal siempre será tratada de manera adecuada respetando la confidencialidad necesaria y de acuerdo con las leyes, las directivas, los reglamentos y los principios aplicables a la protección de datos personales.
+                        </div>
+
+                        <div class="form-group form-check">
+                          <input type="checkbox" class="form-check-input" id="privacidad" name="privacidad">
+                          <label class="form-check-label" for="exampleCheck1">Acepto los términos y condiciones.</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-outline-info btn-block">Enviar</button>
+                    </form>
+                </div>
             </div>
-        </div>
+        </div>       
         <hr>
     
     </main>
 
-    <div class="footer-center">
-        <footer>
-            <p>&#169; David Hernández Sánchez</p>
-            <p>&#64; davidh.schz@gmail.com</p>
-            <p><a href="contacto.html" target="_blank">Contáctenos</a></p>
-            <p>Todos los derechos reservados.</p>
-            <p>2020</p> 
-        </footer>
-    </div>
+    <footer class="p-3 mb-2 bg-secondary text-white footer-fixedb mt-5 ">
+                
+        <div class="container">
+            <div class="row">
+                <div class="col col-md-6 ">
+                    <p class="text-center"><i class="fa fa-envelope" aria-hidden="true"></i> David Hernández Sánchez</p>
+                    <p class="text-center"><i class="fa fa-at" aria-hidden="true"></i> davidh.schz@gmail.com</p>
+                    <p class="text-center"><a href="contacto.html" target="_blank"> <i class="fa fa-user-o" aria-hidden="true"></i> Contáctenos</a></p>
+                    <p class="text-center"><i class="fa fa-copyright" aria-hidden="true"></i> Todos los derechos reservados.</p>
+                    <p class="text-center">2020</p>
+                </div>
+                <div class="col col-md-6 mt-5">
+                    <h1 class="text-center">Redes Sociales</h1>
+                    <div class="d-flex justify-content-center">
+                        
+                        <a href="https://www.youtube.com/" target= "_blank" class="text-white">
+                            <i class="fa fa-youtube-play fa-4x" aria-hidden="true"></i>
+                        </a>
+                                                
+                        <a href="https://github.com/davidhschz/tallerIntroduccionProgramacion" class="text-white" target="_blank">
+                            <i class="fa fa-github fa-4x ml-3" aria-hidden="true"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
 
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/552ad8e312.js" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function() {
+                $("p").addClass("text-justify");
+            })
+        </script>
+
+    </footer>
 </body>
 
 </html>
